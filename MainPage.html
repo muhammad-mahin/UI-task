@@ -11,17 +11,17 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  
- 
+
+
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-  
+
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+
 </head>
 
 <body>
@@ -30,7 +30,7 @@
   <header id="header" >
     <div class="container d-flex justify-content-between align-items-center">
 
-  
+
       <a href="index.html" class="logo "><img src="assets/images//ezgif-2-f1151d9a205e.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar me-0 me-lg-5">
@@ -42,10 +42,22 @@
           <li><a class="nav-link text-light text-decoration-none" href="#Qoute">Blog</a></li>
           <li><a class="nav-link text-light text-decoration-none" href="#Picture">Contact</a></li>
         </ul>
-        <i class="bi bi-list d-block d-lg-none text-light fs-3"></i>
+        <i class="bi bi-list d-block d-lg-none text-light fs-3" onclick="openNav()"></i>
       </nav>
       <li class="d-none d-lg-block"><button  class=" btn btn-outline-light rounded-pill mx-3 " href="#Video">Get Started</button></li>
     </div>
+
+    <div id="collapse-nav" class="collapse-nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#hero">Home</a>
+      <a href="#services">Service</a>
+      <a href="#about">About</a>
+      <a href="#Case Study">Case Study</a>
+      <a href="#Quote">Blog</a>
+      <a href="#Picture">Contact</a>
+      <a href="#Video">Get Started</a>
+    </div>
+
   </header>
 
   <section id="hero" class="d-flex align-items-center w-100 theme-bg-clr text-center text-lg-start">
@@ -105,14 +117,14 @@
     </div>
   </section>
 
-   
+
    <section id="about" class="about bg-light">
     <div class="container" >
 
-      
+
 
       <div class="row content  justify-content-lg-between">
-       
+
           <div class=" col-lg-5 pb-lg-5 min-50vh d-flex align-items-end justify-content-start  " style='background-image: url("assets/images/ezgif-2-a9060f50236b.png"); background-repeat: no-repeat;'>
             <div class=" bg-white d-inline-flex align-items-center rounded-3 shadow-lg px-2 py-2 ms-2 ms-md-5  h-80-px mb-4 ">
               <div class="mx-md-3 " > <img src="assets/images/ezgif-2-f1151d9a205e (1).png" alt=""></div>
@@ -122,8 +134,8 @@
                </div>
              </div>
           </div>
-          
-       
+
+
         <div class="col-lg-5 pt-4 pt-lg-0 px-5 text-start">
           <h1 class="section-title  text-start">Grow your <br> business fast</h2>
           <div class="d-md-inline-flex align-items-center">
@@ -165,7 +177,7 @@
           <div class="transparent-card w-100 " >
             <div class="icon h4"><i class="bx bx-store-alt text-danger fs-1"></i></div>
             <h4><a class="text-white" href="">Industries & Manufacturing</a></h4>
-           
+
           </div>
         </div>
 
@@ -173,7 +185,7 @@
           <div class="transparent-card w-100">
             <div class="icon h4"><i class="bx bxs-graduation text-danger fs-1"></i></div>
             <h4><a class="text-white" href="">Education & Health</a></h4>
-            
+
           </div>
         </div>
 
@@ -181,7 +193,7 @@
           <div class="transparent-card w-100">
             <div class="icon h4"><i class="bx bx-cart-alt text-danger fs-1"></i></div>
             <h4><a class="text-white" href="">Retail & Ecommerce</a></h4>
-            
+
           </div>
         </div>
 
@@ -189,7 +201,7 @@
           <div class="transparent-card w-100">
             <div class="icon h4"><i class="bx bxs-plane-alt text-danger fs-1"></i></div>
             <h4><a class="text-white" href="">Travel & Hospitality</a></h4>
-            
+
           </div>
         </div>
         <div class="row my-5">
@@ -220,14 +232,14 @@
 
     <div class="col-xl-4 col-md-4 d-flex align-items-stretch mt-4 mt-md-0 text-center" >
       <div class="text-dark pt-2 w-100">
-     
+
         <h1 class="fw-bold">350+</h1>
         <p>We undestand the Complexity of mordren markets</p>
       </div>
     </div>
     <div class="col-xl-4 col-md-4 d-flex align-items-stretch mt-4 mt-md-0 text-center" >
       <div class="text-dark pt-2 w-100">
-      
+
         <h1 class="fw-bold">20+</h1>
         <p >We undestand the Complexity of mordren markets</p>
       </div>
@@ -237,15 +249,15 @@
 
 </div>
 </section>
-  
+
 <!--  Picture section -->
 <section id="Picture" class="services section-bg bg-white">
   <div class="container" >
-  
+
     <div class="section-title">
       <h2>Some of Our Great Stuffs</h2>
     </div>
-  
+
     <div class="row">
       <div class="col-xl-4 col-md-4 d-flex align-items-stretch text-center justify-content-center rounded-3 " >
         <div class="pt-2 text-dark  rounded-3">
@@ -261,7 +273,7 @@
           <h4 class="text-start">The Security Risks of Changing Package Owners</h4>
         </div>
       </div>
-  
+
       <div class="col-xl-4 col-md-4 d-flex align-items-stretch mt-4 mt-md-0 text-center justify-content-center rounded-3" >
         <div class="pt-2 text-dark  rounded-3">
           <div class="position-relative w-full h-full bg-dark rounded-3 ">
@@ -290,15 +302,15 @@
           <h4 class="text-start">The Security Risks of Changing Package Owners</h4>
         </div>
       </div>
-  
+
     </div>
-  
+
   </div>
   </section>
 
 <section id="Video" class="services section-bg bg-white">
   <div class="container" >
-  
+
     <div class="row">
       <div class="col-12 d-flex align-items-stretch text-center justify-content-center rounded-3 " >
         <div class="pt-2 text-dark ">
@@ -310,20 +322,20 @@
             </div>
             <img src="assets/images/ezgif-2-82af66fcd1cb.png" class=" opacity-25 " alt="...">
           </div>
-          
+
         </div>
       </div>
-  
-      
-     
-  
+
+
+
+
     </div>
-  
+
   </div>
   </section>
   </main>
 
-  
+
   <footer id="footer">
 
 
@@ -344,31 +356,30 @@
           <div class="col-12 col-lg-3 col-md-6 ">
             <h4>Navigation</h4>
             <ul class="list-unstyled ">
-              <li > <a class="text-decoration-none text-black text-start " href="#">Home</a></li>
+              <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">Home</a></li>
               <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">About us</a></li>
               <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">Services</a></li>
               <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">Blog</a></li>
-              <li > <a class="text-decoration-none text-black text-start " href="#">Contact</a></li>
+              <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">Contact</a></li>
             </ul>
           </div>
 
           <div class=" col-12 col-lg-3 col-md-6 ">
             <h4>Services</h4>
             <ul class="list-unstyled">
-              <li > <a class="text-decoration-none text-black text-start " href="#">Drone Mapping</a></li>
+              <li class="py-2" > <a class="text-decoration-none text-black text-start " href="#">Drone Mapping</a></li>
               <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">Real Estate</a></li>
               <li class="py-2"> <a class="text-decoration-none text-black text-start " href="#">Commercial</a></li>
-              <li > <a class="text-decoration-none text-black text-start " href="#">Construction</a></li>
-              
+              <li class="py-2" > <a class="text-decoration-none text-black text-start " href="#">Construction</a></li>
+
             </ul>
           </div>
 
-          <div class=" col-12 col-lg-3 col-md-6  footer-newsletter bg-white light pb-lg-5 pt-2 px-md-0
-           px-4 text-start">
+          <div class=" col-12 col-lg-3 col-md-6">
             <h4>Subscribe Newsletter</h4>
             <p>Subscribe our newsletter to get updated about our services and offers</p>
                     <form action="" method="post">
-                      <input class="w-100 rounded-pill" type="email" name="email" placeholder="Email Address">
+                      <input class="w-100 py-1 px-2 rounded-pill" type="email" name="email" placeholder="Email Address">
                     </form>
             <div class="social-links mt-3">
               <a href="#" class="facebook bg-dark"><i class="bx bxl-facebook "></i></a>
@@ -381,13 +392,25 @@
         </div>
       </div>
     </div>
-    <!-- Footer End -->
 
 
- 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
 
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("collapse-nav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("collapse-nav").style.width = "0";
+      }
+      </script>
 </body>
 
 </html>
